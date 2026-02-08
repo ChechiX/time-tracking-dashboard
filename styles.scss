@@ -1,0 +1,184 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Rubik Light';
+  font-style: normal;
+  font-weight: 300;
+  src: url('./fonts/Rubik/static/Rubik-Light.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Rubik Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/Rubik/static/Rubik-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Rubik Medium';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./fonts/Rubik/static/Rubik-Medium.woff2') format('woff2');
+}
+
+$white: #ffffff;
+$black: #000000;
+$pink-400: #ff5e7d;
+$orange-300: #ff8b64;
+$yellow-300: #f1c75b;
+$green-400: #4bcf82;
+$grey-200: #d8d8d8;
+$navy-200: #bbc0ff;
+$navy-800: #33397a;
+$navy-900: #1c204b;
+$navy-950: #0e1323;
+$blue-300: #55c2e6;
+$purple-500: #7078c9;
+$purple-600: #5747ea;
+$purple-700: #7335d2;
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+  display: block;
+}
+
+body,
+p,
+h1 {
+  margin: 0;
+}
+
+.text-navy-200 {
+  color: $navy-200;
+}
+
+.text-white {
+  color: $white;
+}
+
+%text-preset-1 {
+  font-family: 'Rubik Light';
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+
+%text-preset-2 {
+  font-family: 'Rubik Light';
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+%text-preset-3 {
+  font-family: 'Rubik Light';
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+%text-preset-4 {
+  font-family: 'Rubik Light';
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+%text-preset-5-medium {
+  font-family: 'Rubik Medium';
+  font-size: 1.125rem;
+  line-height: 1.2;
+}
+
+%text-preset-5-regular {
+  font-family: 'Rubik Regular';
+  font-size: 1.125rem;
+  line-height: 1.2;
+}
+
+%text-preset-6 {
+  font-family: 'Rubik Regular';
+  font-size: 0.9375rem;
+  line-height: 1.2;
+}
+
+body {
+  padding: 1.5rem;
+  min-height: 100dvh;
+  background-color: $navy-950;
+}
+
+.container {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.author {
+  background-color: $navy-900;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-bottom: 1.5625rem;
+  border-bottom-left-radius: 0.9375rem;
+  border-bottom-right-radius: 0.9375rem;
+}
+
+.author__info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: $purple-600;
+  border-radius: 0.9375rem;
+  padding: 2rem 2rem;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+.author__image {
+  border: 3px solid $white;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+}
+
+.author__text {
+  @extend %text-preset-6;
+}
+
+.author__name {
+  @extend %text-preset-4;
+}
+
+.time-frame-selector {
+  display: flex;
+  justify-content: space-around;
+}
+
+.time-frame-selector__button {
+  @extend %text-preset-5-regular;
+  color: $white;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

@@ -1,0 +1,131 @@
+@font-face {
+  font-display: swap;
+  font-family: "Rubik Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./fonts/Rubik/static/Rubik-Light.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Rubik Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/Rubik/static/Rubik-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Rubik Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/Rubik/static/Rubik-Medium.woff2") format("woff2");
+}
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+  display: block;
+}
+
+body,
+p,
+h1 {
+  margin: 0;
+}
+
+.text-navy-200 {
+  color: #bbc0ff;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.author__name {
+  font-family: "Rubik Light";
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.time-frame-selector__button {
+  font-family: "Rubik Regular";
+  font-size: 1.125rem;
+  line-height: 1.2;
+}
+
+.author__text {
+  font-family: "Rubik Regular";
+  font-size: 0.9375rem;
+  line-height: 1.2;
+}
+
+body {
+  padding: 1.5rem;
+  min-height: 100dvh;
+  background-color: #0e1323;
+}
+
+.container {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.author {
+  background-color: #1c204b;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-bottom: 1.5625rem;
+  border-bottom-left-radius: 0.9375rem;
+  border-bottom-right-radius: 0.9375rem;
+}
+
+.author__info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: #5747ea;
+  border-radius: 0.9375rem;
+  padding: 2rem 2rem;
+}
+.author__info div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.author__image {
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+}
+
+.time-frame-selector {
+  display: flex;
+  justify-content: space-around;
+}
+
+.time-frame-selector__button {
+  color: #ffffff;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=styles.css.map */
