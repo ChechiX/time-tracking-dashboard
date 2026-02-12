@@ -263,7 +263,7 @@ body {
 
 .time-frame-selector__button {
   @extend %text-preset-5-regular;
-  color: $white;
+  color: $purple-500;
   border: none;
   background-color: transparent;
   padding: 0;
@@ -271,6 +271,10 @@ body {
   @media (min-width: 90rem) {
     text-align: left;
   }
+}
+
+.time-frame-selector__button--active {
+  color: $white;
 }
 
 .section {

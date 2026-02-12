@@ -236,7 +236,7 @@ body {
 }
 
 .time-frame-selector__button {
-  color: #ffffff;
+  color: #7078c9;
   border: none;
   background-color: transparent;
   padding: 0;
@@ -245,6 +245,10 @@ body {
   .time-frame-selector__button {
     text-align: left;
   }
+}
+
+.time-frame-selector__button--active {
+  color: #ffffff;
 }
 
 .section {
