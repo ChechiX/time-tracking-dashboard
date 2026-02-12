@@ -3,8 +3,6 @@ const timeFrameButtons = document.querySelectorAll(
   '.time-frame-selector__button',
 );
 
-// const timeFrameButtons = [dailyBtn, weeklyBtn, monthlyBtn];s
-
 let activitiesData = [];
 
 const labels = {
@@ -37,7 +35,6 @@ timeFrameButtons.forEach((button) => {
 
     const selectedTimeframe = button.textContent.trim().toLowerCase();
 
-    console.log(selectedTimeframe);
     updateCards(selectedTimeframe, activitiesData);
   });
 });
